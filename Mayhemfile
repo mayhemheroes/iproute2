@@ -1,0 +1,7 @@
+project: rnshah9/iproute2
+target: iproute2
+image: ghcr.io/rnshah9/playground:iproute2
+
+cmds:
+  - cmd: /repo/ip/ip -batch @@
+ #    filepath: /test.c
