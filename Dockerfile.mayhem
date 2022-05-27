@@ -1,11 +1,7 @@
 FROM --platform=linux/amd64 ubuntu:22.04
 
 RUN apt-get update
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y vim less file
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y build-essential
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y libdb-dev
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y bison flex
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y pkg-config
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y build-essential libdb-dev bison flex pkg-config
 
 COPY . /repo
 WORKDIR /repo
