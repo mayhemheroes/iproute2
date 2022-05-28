@@ -1,5 +1,5 @@
 project: rnshah9/iproute2
-target: iproute2
+target: ip
 
 cmds:
   - cmd: /repo/ip/ip -batch @@
