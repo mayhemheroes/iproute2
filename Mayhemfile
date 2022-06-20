@@ -1,4 +1,4 @@
-project: rnshah9/iproute2
+project: iproute2
 target: ip
 
 cmds:
