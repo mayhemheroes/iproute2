@@ -2,4 +2,4 @@ project: iproute2
 target: ip
 
 cmds:
-  - cmd: /repo/ip/ip -batch @@
+  - cmd: /ip -batch @@
