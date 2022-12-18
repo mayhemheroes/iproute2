@@ -11,4 +11,4 @@ RUN clang++ /repo/mayhem/fuzz_get_rate.cpp -fsanitize=fuzzer,address /repo/lib/l
 
 FROM ubuntu:22.04 as package
 COPY --from=builder /repo/ip/ip /
-COPY --from=builder /fuzz /fuzz
+COPY --from=builder /fuzz /fuzz_get_rate
