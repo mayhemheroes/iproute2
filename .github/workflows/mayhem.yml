@@ -59,7 +59,8 @@ jobs:
       fail-fast: false
       matrix:
         mayhemfile:
-          - mayhem/Mayhemfile
+          - mayhem/Mayhemfile_get_rate
+          - mayhem/Mayhemfile_ip
 
     steps:
       - uses: actions/checkout@v3
