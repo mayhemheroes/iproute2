@@ -1,0 +1,6 @@
+project: iproute2
+target: get-rate
+
+cmds:
+  - cmd: /fuzz_get_rate
+    libfuzzer: true
