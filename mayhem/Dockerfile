@@ -7,7 +7,7 @@ COPY . /repo
 WORKDIR /repo
 RUN ./configure
 RUN make -j8 
-RUN clang++ /repo/mayhem/fuzz.cpp -fsanitize=fuzzer,address /repo/lib/libutil.a -o /fuzz
+RUN clang++ /repo/mayhem/fuzz_get_rate.cpp -fsanitize=fuzzer,address /repo/lib/libutil.a -o /fuzz
 
 FROM ubuntu:22.04 as package
 COPY --from=builder /repo/ip/ip /
