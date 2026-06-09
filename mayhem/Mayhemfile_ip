@@ -1,0 +1,8 @@
+project: iproute2
+target: ip
+
+testsuite: # mayhem-lint: keep-testsuite
+  - file:///mayhem/mayhem/testsuite/ip
+
+cmds:
+  - cmd: /mayhem/ip_bin -force -batch @@
