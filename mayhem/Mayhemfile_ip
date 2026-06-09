@@ -1,0 +1,5 @@
+project: iproute2
+target: ip
+
+cmds:
+  - cmd: /mayhem/ip_bin -batch @@
